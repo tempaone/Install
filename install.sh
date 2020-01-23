@@ -162,11 +162,11 @@ Everyone is welcome and everyone can help make it better,
 so we like to greet you as a new / old user
 
 		┌─────────────────────────────────────┐
-		│  				      |
+		│                                     |
 		| A special thanks to MrDoob and Admin|
 		| for letting this project burn so    |
 		| much that we can now ensure success.|
-		│				      |
+		│                                     |
 		│ Thanks to for your contributions:   │
 		│                                     │
 		│ Davaz, Deiteq, FlickerRate,         │
@@ -178,9 +178,9 @@ so we like to greet you as a new / old user
 		│ BugHunter : Krallenkiller           │
 		│                                     │
 		│ and all other guys                  │
-		│ If we missed you, sorry..	      |
+		│ If we missed you, sorry..           |
 		| Just make a commit xD               |
-		│			   	      |
+		│                                     |
 		│ TheShadow you are welcome           │
 		└─────────────────────────────────────┘
 
