@@ -247,7 +247,7 @@ if [[ $(lsb_release -si) == "Debian" ]]; then
 	add-apt-repository main >/dev/null 2>&1
 	add-apt-repository non-free >/dev/null 2>&1
 	add-apt-repository contrib >/dev/null 2>&1
-	wget -qN https://raw.githubusercontent.com/PTS-Team/Install/master/source/ansible-debian-ansible.list /etc/apt/sources.list.d/
+	wget -qN https://raw.githubusercontent.com/MHA-Team/Install/master/source/ansible-debian-ansible.list /etc/apt/sources.list.d/
 elif [[ $(lsb_release -si) == "Ubuntu" ]]; then
 	add-apt-repository main >/dev/null 2>&1
 	add-apt-repository universe >/dev/null 2>&1
@@ -365,7 +365,7 @@ fi
 
 endingnonexist() {
 logfile=/var/log/log-install.txt
-chk=$(figlet "<<< P T S - TEAM >>>" | lolcat)
+chk=$(figlet "<<< M H A - TEAM >>>" | lolcat)
 touch /var/plexguide/new.install
 tee <<-EOF
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -392,7 +392,7 @@ EOF
 ###############
 endingexist() {
 logfile=/var/log/log-install.txt
-chk=$(figlet "<<< P T S - TEAM >>>" | lolcat)
+chk=$(figlet "<<< M H A - TEAM >>>" | lolcat)
 touch /var/plexguide/new.install
 tee <<-EOF
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
