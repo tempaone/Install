@@ -73,17 +73,17 @@ tee <<-EOF
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 EOF
     cd /bin
-    find . -type f | xargs grep -l "$old" |tee /dev/tty | xargs sed -i "s+${old}+${new}+g"
+    find . -type f -print0 | xargs -0 grep -l -r "$old" |tee /dev/tty | xargs sed -i "s+${old}+${new}+g"
     echo
     read -p '✅ | /bin Files Updated | Press [ENTER] to Continue ' typed </dev/tty
     sleep 0.5
     cd /var/plexguide
-    find . -type f | xargs grep -l "$old" |tee /dev/tty | xargs sed -i "s+${old}+${new}+g"
+    find . -type f -print0 | xargs -0 grep -l -r "$old" |tee /dev/tty | xargs sed -i "s+${old}+${new}+g"
     echo
     read -p '✅ | /var/plexguide Files Updated | Press [ENTER] to Continue ' typed </dev/tty
     sleep 0.5
     cd /opt
-    find . -type f | xargs grep -l "$old" |tee /dev/tty | xargs sed -i "s+${old}+${new}+g"
+    find . -type f -print0 | xargs -0 grep -l -r "$old" |tee /dev/tty | xargs sed -i "s+${old}+${new}+g"
     echo
     read -p '✅ | /opt Files Updated | Press [ENTER] to Continue ' typed </dev/tty
 }
